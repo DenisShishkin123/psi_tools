@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    <p>Уверены что хоите удалить {{ object }}</p>
+    <p>{{ object.activating }}</p>
+    <p>{{ object.beliefs }}</p>
+    <p>{{ object.consequences }}</p>
+    <p>{{ object.emotions }}</p>
+    <button>Удалить</button>
+</form>
+{% endblock %}
+

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<p><a href="{{model.get_absolute_url}}">{{model.get_absolute_url}}</a></p>
+<p>{{model.activating}}</p>
+<p>{{model.beliefs}}</p>
+<p>{{model.consequences}}</p>
+<p>{{model.emotions}}</p>
+<p>{{model.date_create}}</p>
+
+{% endblock %}
